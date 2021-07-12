@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  background: #1d1546;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card-container {
+  height: 600px;
+  width: 350px;
+  margin: 50px;
+  border-radius: 46px;
+  background: #1d1546;
+  box-shadow: inset 16px 16px 34px #130d2d, inset -16px -16px 34px #271d5f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  height: 550px;
+  width: 300px;
+  border-radius: 46px;
+  background: #1d1546;
+  box-shadow: 16px 16px 34px #130d2d, -16px -16px 34px #271d5f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.2);
+  opacity: 1;
+}
+.charImage {
+  margin-bottom: 10px;
+}
+.card h2 {
+  color: rgba(255, 255, 255, 0.315);
+  font-size: 2em;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.card p {
+  color: rgba(255, 255, 255, 0.678);
+  text-align: justify;
+  margin: 0 20px;
+  font-size: 0.9em;
+  font-weight: 200;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    height: 100%;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .card {
+    height: 545px;
+    width: 270px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .card {
+    height: 545px;
+    width: 230px;
+  }
+  .card h2 {
+    font-size: 1em;
+  }
+
+  .card p {
+    font-size: 0.8em;
+  }
+}
